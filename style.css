@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/texture-1553956_1920.jpg');
+    background-size: cover;
+
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main>.wrapper {
+    height: 50vh;
+    position: relative;
+    top: 85px;
+    padding-bottom: 200px;
+    overflow: hidden;
+}
+
+.main>.wrapper>.content {
+    background-color: rgba(213, 160, 80, 0.549);
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main>.wrapper>.content>.seed {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.main>.wrapper>.content>.seed>img {
+    height: 70%;
+    z-index: 100;
+}
+
+.main>.wrapper>.content>.seed>.key {
+    position: absolute;
+    left: 30%;
+    font-size: 400%;
+    color: rgb(85 0 0);
+}
+
+.main>.basket {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main>.basket>.image {
+    width: 30%;
+}
+
+
+
+@keyframes img {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(70vh);
+    }
+}
